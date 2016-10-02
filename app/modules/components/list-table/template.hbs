@@ -1,0 +1,8 @@
+
+<div class="grid" style="width: 200px;float: left">
+    <ul class="cell">
+          {{#each userList as |user|}}
+            <li {{action "selectUser" user}}> {{user.login}} </li>
+          {{/each}}
+    </ul>
+</div>
